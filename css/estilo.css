@@ -5,9 +5,8 @@
 body {
 	width: 100%;
 	height: 100%;
-	cursor: url(imagenes/cursor.png), auto;
+	/*cursor: url(imagenes/cursor.png), auto;*/
 	font-family: 'Bebas Neue', cursive;
-
 }
 
 /*------- header -----*/
@@ -39,7 +38,6 @@ nav a {
 	height: 60px;
 	transition: 0.3s;
 	padding: 20px;
-	margin-left: 50px;
 }
 
 a:hover {
@@ -61,6 +59,10 @@ a:hover {
 	animation-iteration-count: infinite;
 }
 
+.article {
+	padding-left: 150px;
+}
+
 @keyframes flecha {
 	0% {
 		margin-top: 900px;
@@ -80,16 +82,20 @@ a:hover {
 	}
 	nav {
 		padding-left: 19px;
+		margin-left: 0;
 	}
 	nav a {
 		font-size: 14px;
-		margin-left: 0;
 	}
 	.boton {
 		width: 60px !important;
 		height: 20px !important;
 		margin-left: 90px;
 	}
+	.article {
+		padding-left: 0;
+	}
+
 	@keyframes flecha {
 	0% {
 		margin-top: 400px;
@@ -102,6 +108,7 @@ a:hover {
 	}
 }
 }
+
 
 
 /*------titulos H2-----*/
@@ -126,6 +133,15 @@ h3 {
 	padding-left: 30px;
 }
 
+.carro {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	display: inline-flex;
+	margin-left: -173px;
+	margin-top: -111px;
+}
+
 @media screen and (max-width: 500px) {
 	.titulo-contenido {
 		font-size: 20px;
@@ -133,9 +149,15 @@ h3 {
 		margin-bottom: 50px;
 	}
 	h3 {
-		padding-top: 50px;
+		padding-top: 90px;
 		padding-left: 325px;
 		font-size: 14px;
+	}
+	.carro {
+		margin-top: 45px;
+		width: 12px;
+		height: 12px;
+		margin-left: 129px;
 	}
 }
 /*------ listas guitarras ------*/
@@ -151,13 +173,13 @@ h3 {
 .guitarra {
 	background-position: center;
 	display: inline-flex;
-	min-width: 360px;
+	min-width: 450px;
 	height: 600px;
 	justify-content: center;
 	align-items: center;
 }
 
-.guitarra img {	
+.guitarra .img {	
 	transform: rotate(30deg);
 	position: absolute;
 	width: 160px;
@@ -165,25 +187,25 @@ h3 {
     z-index: 10;
 }
 
-.guitarra img:hover {
+.guitarra .img:hover {
 	transform: rotate(0deg);
-	width: 350px;
+	width: 250px;
 	filter: drop-shadow(15px 15px 20px #4d4d4d);
 }
 
 @media screen and (max-width: 500px) {
 	.guitarra {
-		width: 120px !important;
-		height: 150px;
+		min-width: 120px !important;
+		height: 200px;
 		background-color: white;
 	}
-	.guitarra img {
+	.guitarra .img {
 		transform: rotate(45deg);
 		width: 75px;
 	}
-	.guitarra img:hover {
+	.guitarra .img:hover {
 	transform: rotate(90deg);
-	width: 120px;
+	width: 100px;
 	filter: drop-shadow(7px 7px 20px #4d4d4d);
 }
 
@@ -191,11 +213,11 @@ h3 {
 }
 
 
-/*----- footer ----*/
+/*----- footer ----
 
 .footer {
 	width: 100%;
-	position: fixed;
+	position: relative;
 	background-color: white;
 	display: inline-flex;	
 	justify-content: space-around;
@@ -221,3 +243,4 @@ h3 {
 		font-size: 12px;
 	}
 }
+*/
